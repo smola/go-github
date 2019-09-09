@@ -61,7 +61,7 @@ type CommitAuthor struct {
 	Email *string    `json:"email,omitempty"`
 
 	// The following fields are only populated by Webhook events.
-	Login *string `json:"username,omitempty"` // Renamed for go-github consistency.
+	Login *string `json:"login,omitempty"` // Renamed for go-github consistency.
 }
 
 func (c CommitAuthor) String() string {
